@@ -2,22 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emotion Reader!</title>
+    <title>Document</title>
 </head>
 <body>
     <h1>Emotion Reader</h1>
-    <div id="container">
-    <form id="image-form" onsubmit="handle(event)" enctype="multipart/form-data">
-        <input name="image" accept="image/*" type="file" id="file" onchange="loadFile(event)">
-        <img id="output">
-        <button type="submit" style="color: green;font-size:20px;">Submit Picture</button>
-    </form>
-    
-    <div id="emotion"></div>
-    </div>
+    <div id= "container">
+        <form onsubmit="handle(event)" enctype="multipart/form-data" id="image-form">
+            <input accept = "image/*" name="image" type="file" id="file" onchange="loadFile(event)"/>
+            <img id="output" width="50%"/>
+            <button type="submit">
+                "Submit!"
+            </button> 
+        </form>
+        <div id="emotion"></div>
+    </div>  
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="config.js" type="text/javascript"></script>
+
+    <script src="index.js"></script>   
 </body>
 </html>
